@@ -45,14 +45,42 @@ header nav ul li {
 }
 
 /* ここまでヘッダーの記述 */
-.block_bg {
-  background: url("https://drive.google.com/uc?export=view&id=18EaewK9nKg3X4yLaqPldGJAjS8jzlZsS") center;
-  background-size: cover;
-  width: 100%;
-  padding-top: 20%;
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+h2,
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.button-box {
+  width: 35%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button-box button {
+  width: 100px;
+  height: 40px;
+  background-color: #fdf4a5;
 }
 
 .title-wrapper {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,13 +89,22 @@ header nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
 }
 
-.title-wrapper button {
-  width: 100px;
-  height: 40px;
-  background-color: #fdf4a5;
+.title-wrapper .top-logo {
+  width: 490px;
+}
+
+.title-wrapper .top-catch {
+  width: 438px;
+}
+
+.title-wrapper .tree {
+  width: 174px;
+}
+
+.setsumei-box {
+  width: 60%;
 }
 
 /* ここからフッターの記述 */
@@ -83,7 +120,7 @@ html, body {
   margin-bottom: -50px;
 }
 
-.wrapper .contents-wrapper {
+.wrapper .top-wrapper {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,12 +146,6 @@ html, body {
 }
 
 /* ここまでフッターの記述 */
-h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-}
-
 /* テーブル プロジェクト記事ここから */
 table {
   border-collapse: collapse;
@@ -134,15 +165,11 @@ td {
 }
 
 .project {
-  width: 80%;
+  width: 60%;
 }
 
 .all-img {
   width: 100%;
-}
-
-.hito{
-  width:43px;
 }
 
 /* テーブル プロジェクト記事ここまで */
@@ -167,4 +194,4 @@ td {
   width: 200px;
   margin: 10px;
 }
-/*# sourceMappingURL=project.css.map */
+/*# sourceMappingURL=index.css.map */
