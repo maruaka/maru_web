@@ -98,19 +98,19 @@ td {
 }
 
 .td-right {
-  width: 30%;
+  width: 20%;
 }
 
 .td-left {
-  width: 50%;
+  width: 60%;
 }
 
 .project {
-  width: 80%;
+  width: 60%;
 }
 
 .all-img {
-  width: 100%;
+  width: 250px;
 }
 
 /* テーブル プロジェクト記事ここまで */
