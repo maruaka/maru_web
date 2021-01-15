@@ -5,14 +5,14 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   background-color: #e6e6e6;
-      a {	
+   background-color: #ffffff;
+   a {	
    text-decoration: none;
    color: #4b4b4b;
 }
 }
 
-/* ここからヘッダーの記述 */
+   /* ここからヘッダーの記述 */
 header {
     width: 100%;
     padding: 30px 4% 10px;
@@ -36,26 +36,29 @@ header {
 }
 }
 }
-/* ここまでヘッダーの記述 */
+   /* ここまでヘッダーの記述 */
 
 
-/* ここからフッターの記述 */
+   /* ここからフッターの記述 */
 html, body {
   height: 100%;
   margin: 0;
 }
 .wrapper {
-  min-height: 100%;
-  /* フッタの高さと等しいネガティブマージン */
-  /* また最後の子要素の潜在的なマージンとしても機能 */
-//   margin-bottom: -50px;
+   min-height: 100%;
+   /* フッタの高さと等しいネガティブマージン */
+   /* また最後の子要素の潜在的なマージンとしても機能 */
+   //margin-bottom: -50px;
 }
   .contents-wrapper{
-padding:20px;
-display: flex;
+   padding:20px;
+   display: flex;
 	flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-items: center;
+  .top-space{
+   height:100px;
+  }
 }
 
 .footer {
@@ -104,4 +107,5 @@ td {
 .Copyright{
     font-size: 8px;
     text-align: center;
+    padding:20px;
 }

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 body a {
@@ -125,30 +125,36 @@ td {
   padding: 1em;
 }
 
-.td-right {
+.project {
+  width: 70%;
+}
+
+.project .td-right {
   width: 30%;
 }
 
-.td-left {
-  width: 50%;
-}
-
-.project {
-  width: 80%;
-}
-
-.all-img {
+.project .td-right .all-img {
   width: 100%;
 }
 
-.hito{
-  width:43px;
+.project .td-left {
+  width: 50%;
+}
+
+.data {
+  margin: auto;
+  border: none;
+}
+
+.hito {
+  width: 43px;
 }
 
 /* テーブル プロジェクト記事ここまで */
 .Copyright {
   font-size: 8px;
   text-align: center;
+  padding: 20px;
 }
 
 .project-ph-box {

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 body a {
@@ -74,6 +74,10 @@ html, body {
           align-items: center;
 }
 
+.contents-wrapper .top-space {
+  height: 100px;
+}
+
 .footer {
   height: 50px;
   background-color: #2c061f;
@@ -117,5 +121,6 @@ td {
 .Copyright {
   font-size: 8px;
   text-align: center;
+  padding: 20px;
 }
 /*# sourceMappingURL=all.css.map */

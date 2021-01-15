@@ -113,14 +113,6 @@ display: flex;
 /* ここまでフッターの記述 */
 
 
-
-
-
-
-
-
-
-
 /* テーブル プロジェクト記事ここから */
 table {
 	border-collapse: collapse;
@@ -143,12 +135,20 @@ td {
 .all-img{
    width:100%;
 }
+.button-wrapper{
+     button{
+    width:200px;
+    height:40px;
+    background-color: #fdf4a5;
+ }
+}
+
 /* テーブル プロジェクト記事ここまで */
 .Copyright{
     font-size: 8px;
     text-align: center;
+    padding:20px;
 }
-
 
 .project-ph-box{
    width:80%;
@@ -159,4 +159,8 @@ td {
 width: 200px;
 margin: 10px;
 }
+}
+
+.setsumei{
+   width:80%;
 }
