@@ -172,17 +172,23 @@ td {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .button-wrapper button {
   width: 200px;
   height: 40px;
   background-color: #fdf4a5;
 }
 
+=======
+>>>>>>> origin/master
 /* テーブル プロジェクト記事ここまで */
 .Copyright {
   font-size: 8px;
   text-align: center;
+<<<<<<< HEAD
   padding: 20px;
+=======
+>>>>>>> origin/master
 }
 
 .project-ph-box {
@@ -201,8 +207,11 @@ td {
   width: 200px;
   margin: 10px;
 }
+<<<<<<< HEAD
 
 .setsumei {
   width: 80%;
 }
+=======
+>>>>>>> origin/master
 /*# sourceMappingURL=index.css.map */
