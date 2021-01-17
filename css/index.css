@@ -43,8 +43,13 @@ header {
           align-items: center;
 }
 
+header .logo-mini {
+  width: 80px;
+}
+
 header nav {
   margin: 0 0 0 auto;
+  padding-right: 100px;
 }
 
 header nav ul {
@@ -61,6 +66,13 @@ header nav ul li {
 }
 
 /* ここまでヘッダーの記述 */
+.background {
+  background-image: url(../img/all-bg-toumei.png);
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 100vh;
+}
+
 .wrapper {
   min-height: 100%;
   /* フッタの高さと等しいネガティブマージン */
@@ -69,113 +81,93 @@ header nav ul li {
 }
 
 .wrapper .top-wrapper {
+  width: 80%;
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+.wrapper .top-wrapper .top-box {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.wrapper .top-wrapper .title-wrapper {
-  width: 65%;
-  padding-top: 150px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.wrapper .top-wrapper .top-box .top-right {
+  width: 50%;
 }
 
-.wrapper .top-wrapper .title-wrapper .top-logo {
+.wrapper .top-wrapper .top-box .top-right .top-logo {
   width: 90%;
 }
 
-.wrapper .top-wrapper .title-wrapper .top-catch {
+.wrapper .top-wrapper .top-box .top-left {
+  width: 50%;
+}
+
+.wrapper .top-wrapper .top-box .top-left .top-catch {
   width: 340px;
 }
 
-.wrapper .top-wrapper .title-wrapper .tree {
+.wrapper .top-wrapper .top-box .top-left .tree {
   padding-top: 20px;
   width: 174px;
 }
 
-.wrapper .top-wrapper .button-box {
-  width: 40%;
+.wrapper .button-box {
+  width: 50%;
   margin: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.wrapper .top-wrapper .button-box button {
-  width: 150px;
-  height: 40px;
-  background-color: #f5f5c9;
+.wrapper .button-box .shiny-btn2 {
+  width: 120px;
+  margin: 15px;
 }
 
-.story-box {
-  background: url(img/top-bg.png) no-repeat center;
-  height: 723px;
-  background-size: cover;
+.wrapper .story-box {
   padding: 150px;
   text-align: center;
 }
 
-.story-box h2 {
+.wrapper .story-box h2 {
   font-size: 32px;
 }
 
-.story-box p {
+.wrapper .story-box p {
   line-height: 30px;
 }
 
-.setsumei-box {
+.wrapper .setsumei-box {
   padding-top: 100px;
   text-align: center;
   width: 60%;
 }
 
-.setsumei-box p {
+.wrapper .setsumei-box p {
   line-height: 30px;
 }
 
-.setsumei-box .setumei-img-box {
+.wrapper .setsumei-box .setumei-img-box {
   border-radius: 10px;
   background-color: white;
   text-align: center;
   padding: 30px;
 }
 
-.setsumei-box .setumei-img-box .setsumei {
+.wrapper .setsumei-box .setumei-img-box .setsumei {
   width: 90%;
 }
 
-.button-wrapper {
+.wrapper .button-wrapper {
   padding: 30px;
+  width: 80%;
 }
 
-.button-wrapper button {
+.wrapper .button-wrapper .shiny-btn2 {
   width: 200px;
-  height: 40px;
-  background-color: #f5f5c9;
 }
 
 /* ここからフッター */

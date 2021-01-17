@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(c:\Users\aple2\OneDrive\デスクトップ\suku-suku\css\_kiran-bt.css);
 body {
   margin: 0;
   padding-top: 100px;
@@ -43,8 +44,13 @@ header {
           align-items: center;
 }
 
+header .logo-mini {
+  width: 80px;
+}
+
 header nav {
   margin: 0 0 0 auto;
+  padding-right: 100px;
 }
 
 header nav ul {

@@ -1,8 +1,9 @@
 // 共通の内容ここから
-$bt-color:#f5f5c9;
 $hedder-collor: #8FC8E4;
 $bg-color: #018D51;
-//  #e6e6e6;
+
+
+
 
 body {
    margin: 0;
@@ -32,6 +33,10 @@ span {
    font-weight: bold;
 }
 
+
+
+
+
 /* ここからヘッダーの記述 */
 header {
    width: 100%;
@@ -43,8 +48,13 @@ header {
    display: flex;
    align-items: center;
 
+   .logo-mini {
+      width: 80px;
+   }
+
    nav {
       margin: 0 0 0 auto;
+      padding-right: 100px;
 
       ul {
          list-style: none;
@@ -58,125 +68,142 @@ header {
       }
    }
 }
+
 /* ここまでヘッダーの記述 */
 // 共通の内容ここまで
 
 
 
-//TOP画面部分ここから
+// <!-- 背景 -->
+.background {
+   background-image: url(../img/all-bg-toumei.png);
+   background-repeat: no-repeat;
+   width: 90%;
+   height: 100vh;
+}
+
+// <!-- 背景 -->
+
+
+
 .wrapper {
    min-height: 100%;
    /* フッタの高さと等しいネガティブマージン */
    /* また最後の子要素の潜在的なマージンとしても機能 */
    margin-bottom: -50px;
 
+
+
+
+
+
+   // TOP画面部分ここから 
    .top-wrapper {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .title-wrapper {
-//  background: url(img/top-bg.png) no-repeat center;
-//   height: 700px;
-//   background-size: cover;
+      width: 750px;
+      padding-top: 150px;
+      padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
 
+      .top-box {
 
-         width: 65%;
-         padding-top:150px;
-         padding-bottom:20px;
+         padding: 20px;
          display: flex;
-         flex-wrap: wrap-reverse;
-         justify-content: space-between;
 
-         .top-logo {
+
+         .top-right {
+            width:50%;
+            .top-logo {
+               width: 50%;
+            }
+         }
+
+         .top-left {
+            width:50%;
+            .top-catch {
+               width: 340px;
+            }
+
+            .tree {
+               padding-top: 20px;
+               width: 174px;
+            }
+         }
+
+      }
+
+   }
+
+   .button-box {
+      width: 50%;
+      margin: 50px;
+      display: flex;
+
+      .shiny-btn2 {
+         width: 120px;
+         margin: 15px;
+      }
+
+   }
+
+   //TOP画面部分ここまで
+
+
+
+   // ストーリー画面ここから
+
+   .story-box {
+
+      padding: 150px;
+      text-align: center;
+
+      h2 {
+         font-size: 32px;
+      }
+
+      p {
+         line-height: 30px;
+      }
+   }
+
+   // ストーリー画面ここまで
+
+
+
+   // 説明の画面ここから
+
+
+   .setsumei-box {
+      padding-top: 100px;
+      text-align: center;
+      width: 60%;
+
+      p {
+         line-height: 30px;
+      }
+
+      .setumei-img-box {
+         //角丸
+         border-radius: 10px;
+         background-color: white;
+         text-align: center;
+         padding: 30px;
+
+         .setsumei {
             width: 90%;
          }
-
-         .top-catch {
-            width: 340px;
-         }
-
-         .tree {
-            padding-top: 20px;
-            width: 174px;
-         }
       }
-
-      .button-box {
-         width: 40%;
-         margin: 50px;
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-
-         button {
-            width: 150px;
-            height: 40px;
-            background-color: $bt-color;
-         }
-      }
-
    }
-}
-
-//TOP画面部分ここまで
 
 
-
-// ストーリー画面ここから
-.story-box{
-         background: url(img/top-bg.png) no-repeat center;
-         height: 723px;
-    background-size: cover;
-
-
-   padding: 150px;
-   text-align: center;
-   h2{
-      font-size: 32px;
-   }
-   p{
-         line-height: 30px;
-   }
-}
-
-
-// ストーリー画面ここまで
-
-
-
-// 説明の画面ここから
-
-.setsumei-box {
-   padding-top: 100px;
-   text-align: center;
-   width: 60%;
-p{
-         line-height: 30px;
-}
-   .setumei-img-box {
-      //角丸
-      border-radius: 10px;
-      background-color: white;
-      text-align: center;
+   .button-wrapper {
       padding: 30px;
+      width: 80%;
 
-      .setsumei {
-         width: 90%;
+      .shiny-btn2 {
+         width: 200px;
       }
-   }
-}
-
-.button-wrapper {
-   padding: 30px;
-
-   button {
-      width: 200px;
-      height: 40px;
-      background-color: $bt-color;
    }
 }
 
@@ -199,5 +226,7 @@ p{
    text-align: center;
    padding: 20px;
 }
+
+
 
 /* ここまでフッター */

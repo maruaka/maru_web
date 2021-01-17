@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>suku-suku</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico">
+    <!-- キランとひかるボタン用リンク -->
+    <link rel="stylesheet" href="css/_kiran-bt.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <h1>
-            <a href="index.html">SUKU・SUKU</a>
+            <a href="index.html"><img class="logo-mini" src="img/logo-mini.png" alt=""></a>
         </h1>
         <nav class="pc-nav">
             <ul>
@@ -23,14 +28,21 @@
         </nav>
     </header>
 
+    <!-- 背景 -->
+    <!-- <div class="background"></div> -->
+    <!-- 背景 -->
 
 
-    <!-- top画面部分ここから -->
     <div class="wrapper">
-        <!-- コンテンツ -->
+
+
+        <!-- top画面部分ここから -->
+
         <div class="top-wrapper">
 
-            <div class="title-wrapper">
+            <div class="top-box">
+
+
                 <div class="top-right">
                     <img class="top-logo" src="img/logo.png" alt="">
                 </div>
@@ -40,23 +52,30 @@
                 </div>
             </div>
             <div class="button-box">
-                <button><a href="#story">
-                        ストーリー</a>
-                </button>
-                <button>
-                    ログイン
-                </button>
-                <button>
-                    新規登録
-                </button>
+
+                <a href="#story" class="shiny-btn2">ストーリー</a>
+
+                <a href="index.html" class="shiny-btn2">ログイン</a>
+
+                <a href="index.html" class="shiny-btn2">新規登録</a>
+
             </div>
-            <!-- TOP画面部分ここまで -->
+
+
+        </div>
 
 
 
-            <!-- ストーリー画面ここから -->
-            <div id="story"></div>
-            <div class="story-box">
+
+
+
+        <!-- TOP画面部分ここまで -->
+
+
+
+        <!-- ストーリー画面ここから -->
+        <div id="story"></div>
+        <div class="story-box">
             <h2>STORY</h2>
             <p>あるところに一人の女の子がいました。<br>
                 お花が大好きなのに、ズボラでお世話ベタ。<br>
@@ -68,41 +87,47 @@
                 ここを見たみんな、手助けして！<br>
                 一緒にプロジェクトの木を育てよう！！！！</p>
             <br>
-            </div>
-            <!-- ストーリー画面ここまで -->
-
-
-            <!-- サービス説明画面ここから -->
-
-          <div id="service"></div>
-            <div class="setsumei-box">
-                <h2>プロジェクトの木の育て方と支援のしかた</h2>
-                <p>支援をするたび、プロジェクトの木が成長します。
-                    すくすく育てて、みんなで成長を見守ろう！<br>
-                    10募金ごとに10💗をGET。<br>
-                    SNSで活動を広めていただくと、みなさんの愛情でどんどん大きく！<br>
-                    支援の輪が広がります。
-                </p>
-                <div class="setumei-img-box">
-                    <img class="setsumei" src="img/setsumei-.png" alt="">
-                </div>
-            </div>
-
-            <div class="button-wrapper">
-                <button><a href="all.html">育てる木を探しに行く ‣</a></button>
-            </div>
-            <div class="push"></div>
         </div>
+        <!-- ストーリー画面ここまで -->
+
+
+        <!-- サービス説明画面ここから -->
+
+        <div id="service"></div>
+        <div class="setsumei-box">
+            <h2>プロジェクトの木の育て方と支援のしかた</h2>
+            <p>支援をするたび、プロジェクトの木が成長します。
+                すくすく育てて、みんなで成長を見守ろう！<br>
+                10募金ごとに10💗をGET。<br>
+                SNSで活動を広めていただくと、みなさんの愛情でどんどん大きく！<br>
+                支援の輪が広がります。
+            </p>
+            <div class="setumei-img-box">
+                <img class="setsumei" src="img/setsumei-.png" alt="">
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+
+            <a href="all.html" class="shiny-btn2">育てる木を探しに行く ‣</a>
+
+
+        </div>
+
+        <div class="push"></div>
+        <!-- ここまでくくってあげないとズレる -->
+
     </div>
 
     <br>
-    
+
     <!-- サービス説明画面ここまで -->
 
 
     <footer class="footer">
         <div class="Copyright">Copyright © 2021, SUKU-SUKU All Right Reserved Anup</div>
     </footer>
+
 </body>
 
 </html>

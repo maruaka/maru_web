@@ -1,7 +1,7 @@
 // 共通の内容ここから
-$bt-color:#f5f5c9;
 $hedder-collor: #8FC8E4;
 $bg-color: #018D51;
+@import "_kiran-bt";
 //  #e6e6e6;
 
 body {
@@ -43,9 +43,13 @@ header {
    display: flex;
    align-items: center;
 
+   .logo-mini {
+      width: 80px;
+   }
+
    nav {
       margin: 0 0 0 auto;
-
+padding-right: 100px;
       ul {
          list-style: none;
          margin: 0;
@@ -71,56 +75,60 @@ header {
    /* また最後の子要素の潜在的なマージンとしても機能 */
    //margin-bottom: -50px;
 
-.contents-wrapper {
-   padding: 20px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   h1{
-   font-size: 32px;
-   letter-spacing: 5px;
-      padding-top:100px;
-   }
-   p{
-      text-align: center;
-   }
-   /* テーブル プロジェクト記事ここから */
-   .project {
-      border-collapse: collapse;
-      background-color: white;
-      margin: 20px;
-      //角丸
-      border-radius: 10px;
-      width: 65%;
+   .contents-wrapper {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-      .td-right {
-         padding: 20px;
-         width: 20%;
-
-         .all-img {
-            width: 250px;
-         }
+      h1 {
+         font-size: 32px;
+         letter-spacing: 5px;
+         padding-top: 100px;
       }
 
-      .td-left {
-         width: 70%;
-         padding: 20px;
+      p {
+         text-align: center;
+      }
 
-         td {
-            border: solid 0px;
-            padding: 1em;
+      /* テーブル プロジェクト記事ここから */
+      .project {
+         border-collapse: collapse;
+         background-color: white;
+         margin: 20px;
+         //角丸
+         border-radius: 10px;
+         width: 65%;
 
-            .hito {
-               width: 45px;
+         .td-right {
+            padding: 20px;
+            width: 20%;
+
+            .all-img {
+               width: 250px;
+            }
+         }
+
+         .td-left {
+            width: 70%;
+            padding: 20px;
+
+            td {
+               border: solid 0px;
+               padding: 1em;
+
+               .hito {
+                  width: 45px;
+               }
             }
          }
       }
-   }
 
-   /* テーブル プロジェクト記事ここまで */
+      /* テーブル プロジェクト記事ここまで */
+   }
 }
-}
+
 // このページをまるごとくるむラッパーここまで
 
 

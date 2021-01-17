@@ -1,7 +1,8 @@
 // 共通の内容ここから
-$bt-color:#f5f5c9;
 $hedder-collor: #8FC8E4;
 $bg-color: white;
+// @forward "css/_kiran-bt";
+
 //  #e6e6e6;
 
 body {
@@ -43,8 +44,15 @@ header {
    display: flex;
    align-items: center;
 
+   .logo-mini {
+      width: 80px;
+   }
+
    nav {
       margin: 0 0 0 auto;
+      padding-right: 100px;
+      // position: absolute;
+      // z-index: 99;
 
       ul {
          list-style: none;
@@ -64,9 +72,9 @@ header {
 
 
 
-// /TOP画像の記述/ 
+// /TOP画像の記述/
 .block_bg {
-   background: url('https://drive.google.com/uc?export=view&id=18EaewK9nKg3X4yLaqPldGJAjS8jzlZsS') center;
+   background: url("../img/mini2.png") center;
    background-size: cover;
    width: 100%;
    padding-top: 20%;
@@ -76,11 +84,11 @@ header {
 
 
 
-
-
-
+//ページ全体をくるむラッパー ここから
 .wrapper {
 
+
+   //コンテンツラッパーここから
    .contents-wrapper {
       padding: 20px;
       display: flex;
@@ -93,108 +101,171 @@ header {
          display: flex;
          flex-wrap: wrap-reverse;
          justify-content: space-between;
-         width: 80%;
-padding-top:20px;
-         button {
-            width: 100px;
-            height: 40px;
-            background-color: #fdf4a5;
+         width: 90%;
+         padding: 20px;
+
+         .title-left {
+            width: 60%;
+         }
+
+         .title-right {
+            width: 30%;
+            display: flex;
+
+            .character1{
+               width:70px;
+            }
+
+           .shiny-btn2 {
+               white-space: nowrap;
+               width: 150px;
+               height:20px;
+               background-color: #F1CF09;
+            }
+             .character2{
+               width:100px;
+            }
+
+         }
+
+      }
+
+
+
+
+
+
+
+
+      /* テーブル プロジェクト記事ここから */
+      .project {
+         border-collapse: collapse;
+         background-color: white;
+         margin: 20px;
+         //角丸
+         border-radius: 10px;
+         width: 90%;
+
+         .td-right {
+            padding: 20px;
+            width: 60%;
+
+            .big-ph {
+               width: 650px;
+            }
+         }
+
+         .td-left {
+            width: 70%;
+            padding: 20px;
+
+            .bar {
+               width: 70%;
+            }
+
+            td {
+               border: solid 0px;
+               padding: 1em;
+
+               .hito {
+                  width: 45px;
+               }
+            }
          }
       }
 
-   }
-}
+      /* テーブル プロジェクト記事ここまで */
 
 
+      //ミニコンテンツの２つここから
+      .mini-contents-wrapper {
+         width: 90%;
+         margin: 20px;
+         display: flex;
+
+         .mini-box-right {
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .mini-ph {
+               width: 250px;
+               padding-right: 5px;
+            }
+
+            .mini-title {
+               font-size: 17px;
+               font-weight: bold;
+            }
+         }
+
+         .mini-box-left {
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
 
 
+            .mini-ph {
+               width: 250px;
+               padding-right: 5px;
+            }
 
+            .mini-title {
+               font-size: 17px;
+               font-weight: bold;
+            }
+         }
 
+         .info {
+            width: 100%;
 
-/* テーブル プロジェクト記事ここから */
-.project {
-   border-collapse: collapse;
-   background-color: white;
-   margin: 20px;
-   //角丸
-   border-radius: 10px;
-   width: 90%;
+            .info-text {
+               text-align: left;
+            }
 
-   .td-right {
-      padding: 20px;
-      width: 60%;
+         }
 
-      .big-ph {
-         width: 650px;
       }
-   }
 
-   .td-left {
-      width: 70%;
-      padding: 20px;
+      //ミニコンテンツの２つここまで
 
-      .bar {
+      .info {
          width: 70%;
-      }
 
-      td {
-         border: solid 0px;
-         padding: 1em;
+         .info-text {
+            font-size: 17px;
+            padding-left: 120px;
+            letter-spacing: 5px;
 
-         .hito {
-            width: 45px;
+            .shiny-btn2 {
+               white-space: nowrap;
+               width: auto;
+               // background-color: #fdf4a5;
+            }
          }
+
+
+         .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+         }
+
+
       }
-   }
-}
 
-/* テーブル プロジェクト記事ここまで */
+      //コンテンツラッパーここまで
 
 
-//ミニコンテンツの２つここから
-.mini-contents-wrapper {
-   width: 90%;
-   display: flex;
-margin: 20px;
-
-   .mini-ph {
-      width: 250px;
-      padding-right:5px;
-   }
-
-   .mini-title {
-      font-size: 17px;
-      font-weight: bold;
-   }
-
-   .mini-box-right {
-      width: 45%;
-      padding: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-   }
-
-   .mini-box-left {
-      width: 45%;
-      padding: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
    }
 
 }
 
-//ミニコンテンツの２つここまで
+//ラッパーここまで
 
-.info{
-width:70%;
-.info-text{
-   font-size:14px;
-   padding-left:120px;
-}
-}
+
 
 
 /* ここからフッター */
