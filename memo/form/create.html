@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bokin-form</title>
+  <link rel="stylesheet" href="css/create.css">
+</head>
+
+<body>
+
+
+
+
+  <form class="mb-6" action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data">
+    <!-- @csrf -->
+    <div class="wrapper">
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="title">タイトル</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="text" name="title" id="title">
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="subtitle">テキスト</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="text" name="subtitle" id="subtitle">
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="text_one">プロジェクト説明文</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="text" name="text_one" id="text_one">
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="image_one">タイトル用写真</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="file" name="image_one" accept="image/png, image/jpeg"
+          id='image_one' />
+      </div>
+
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="text_twe">小記事１：文章</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="text" name="text_twe" id="text_twe">
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="image_twe">小記事１：写真</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="file" name="image_twe" accept="image/png, image/jpeg"
+          id='image_twe' />
+      </div>
+
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="text_three">小記事２：文章</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="text" name="text_three" id="text_three">
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="mb-2 uppercase font-bold text-lg text-grey-darkest" for="image_three">小記事２：写真</label>
+        <input class="border py-2 px-3 text-grey-darkest" type="file" name="image_three" accept="image/png, image/jpeg"
+          id='image_three' />
+      </div>
+      <div class="bt-box">
+      <button type="submit"
+        class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
+        送信する
+      </button>
+      </div>
+    </div>
+  </form>
+
+ 
+
+</body>
+
+</html>

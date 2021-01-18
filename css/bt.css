@@ -1,0 +1,19 @@
+.simple_bt {
+  display: block;
+  position: relative;
+  width: 160px;
+  padding: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: #1B1B1B;
+  background: #fff;
+  border: 1px solid #1B1B1B;
+}
+
+.simple_bt:hover {
+  background: #1B1B1B;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=bt.css.map */
