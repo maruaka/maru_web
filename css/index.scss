@@ -172,23 +172,37 @@ header {
 
 
    // 説明の画面ここから
+.setsumei-rapper{
+display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+          
 
 
    .setsumei-box {
       padding-top: 100px;
       text-align: center;
-      width: 60%;
+      width: 80%;
 
       p {
          line-height: 30px;
       }
 
       .setumei-img-box {
+    width:80%;
+    padding:30px;
+display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+
+    border-collapse: collapse;
+         background-color: white;
+         margin: 20px;
          //角丸
          border-radius: 10px;
-         background-color: white;
-         text-align: center;
-         padding: 30px;
+
 
          .setsumei {
             width: 90%;
@@ -206,7 +220,7 @@ header {
       }
    }
 }
-
+}
 // 説明の画面ここまで
 
 
